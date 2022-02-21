@@ -34,6 +34,6 @@ class BibleApp : Application() {
             cacheDataSource,
             booksCacheMapper
         )
-        val booksInteractor = BooksInteractor(booksRepository, BaseBooksDataToDomainMapper())
+        val booksInteractor = BooksInteractor.Base(booksRepository, BaseBooksDataToDomainMapper())
     }
 }
